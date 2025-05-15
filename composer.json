@@ -1,0 +1,63 @@
+{
+    "name": ":lc:vendor/:lc:package",
+    "description": ":package_description",
+    "license": ":license",
+    "authors": [
+        {
+            "name": ":author_name",
+            "email": ":author_email",
+            "homepage": ":author_homepage"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../genesis"
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.3r.media"
+        }
+    ],
+    "homepage": "https://github.com/:lc:vendor/:lc:package",
+    "keywords": ["Laravel", "3r.Media", "Rrr", ":uc:package"],
+    "require": {
+        "php": "^8.3",
+        "illuminate/contracts": "^12.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.21.2",
+        "mockery/mockery": "^1.6.11",
+        "nunomaduro/collision": "^8.1.1",
+        "orchestra/testbench": "^9.0.4",
+        "pestphp/pest": "^3.8",
+        "pestphp/pest-plugin-arch": "^3.1",
+        "pestphp/pest-plugin-faker": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.1",
+        "pestphp/pest-plugin-livewire": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rrr\\:uc:package\\": "src/",
+            "Rrr\\:uc:package\\Database\\Factories\\": "database/factories/",
+            "Rrr\\:uc:package\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rrr\\:uc:package\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rrr\\:uc:package\\:uc:packageServiceProvider"
+            ],
+            "aliases": {
+                ":uc:package": "Rrr\\:uc:package\\Facades\\:uc:package"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
