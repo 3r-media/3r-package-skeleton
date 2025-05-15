@@ -2,7 +2,6 @@
 
 namespace Rrr\:uc:package\Tests;
 
-use Rrr\Cornerstone\CornerstoneServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;
 use Orchestra\Testbench\TestCase as Testbench;
@@ -31,7 +30,6 @@ abstract class TestCase extends Testbench
     {
         return [
             'Rrr\:uc:package\:uc:packageServiceProvider',
-            CornerstoneServiceProvider::class
         ];
     }
 }
