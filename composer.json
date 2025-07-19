@@ -19,7 +19,7 @@
             "url": "https://packages.3r.media"
         }
     ],
-    "homepage": "https://github.com/:lc:vendor/:lc:package",
+    "homepage": "https://github.com/3r-media/:lc:package",
     "keywords": ["Laravel", "3r.Media", "Rrr", ":uc:package"],
     "require": {
         "php": "^8.3",
